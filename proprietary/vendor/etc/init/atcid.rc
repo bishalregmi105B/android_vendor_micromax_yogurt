@@ -1,5 +1,13 @@
 service atcid-daemon-u /vendor/bin/atcid
-    interface vendor.mediatek.hardware.atci@1.0::IAtcid default
+# [build-ledger wall 18, 2026-10-29] Commented: host_init_verifier rejects
+# this interface — "Interface is not in the known set of hidl_interfaces:
+# vendor.mediatek.hardware.atci@1.0::IAtcid"
+# (build_first_20261029_012203.log:27708). The HAL ships as a prebuilt blob;
+# no hidl_interface module exists in-tree to validate against. The daemon
+# registers itself with hwservicemanager at runtime; the rc interface line is
+# only needed for lazy-HAL auto-start, which atcid is not (disabled +
+# property-trigger started). Tree-wide sweep found 4 such rc files; all fixed.
+# interface vendor.mediatek.hardware.atci@1.0::IAtcid default
     class hal
     class main
     socket adb_atci_socket stream 660 radio system

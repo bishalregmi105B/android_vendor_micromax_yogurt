@@ -1,5 +1,8 @@
 service emhidl_user /vendor/bin/em_hidl
-    interface vendor.mediatek.hardware.engineermode@1.2::IEmd EmHidlServer
+# [build-ledger wall 18, 2026-10-29] Commented: interface not in known
+# hidl_interfaces set (prebuilt blob HAL, no in-tree hidl_interface module);
+# same class as atcid.rc fix. Daemon self-registers at runtime.
+# interface vendor.mediatek.hardware.engineermode@1.2::IEmd EmHidlServer
     class hal
     oneshot
     disabled

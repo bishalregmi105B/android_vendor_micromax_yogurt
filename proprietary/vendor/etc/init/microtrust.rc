@@ -102,6 +102,7 @@ on load_persist_props_action
     restorecon_recursive /data/vendor/thh
     chmod 0771 /data/vendor/key_provisioning
     chown system system /data/vendor/key_provisioning
+    setprop vendor.soter.teei.crypto.state unencrypted
     write /proc/bootprof "start teei cfg end (on load_persist_props_action)"
 
 on property:vold.decrypt=trigger_restart_framework
@@ -212,7 +213,7 @@ on fs
     chmod 0660 /dev/tz_vfs
     chown system system /dev/tz_vfs
     chmod 0660 /dev/teei_fp
-    chown system /dev/teei_fp
+    chown system system /dev/teei_fp
     chown system drmrpc /dev/ut_keymaster
     chmod 0660 /dev/ut_keymaster
     # rpmb device

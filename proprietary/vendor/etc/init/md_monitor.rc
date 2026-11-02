@@ -6,7 +6,10 @@ on post-fs-data
 
 # MTK platform .rc configure
 service md_monitor /vendor/bin/md_monitor
-    interface vendor.mediatek.hardware.mdmonitor@1.0::IMDMonitorService default
+# [build-ledger wall 18, 2026-10-29] Commented: interface not in known
+# hidl_interfaces set (prebuilt blob HAL, no in-tree hidl_interface module);
+# same class as atcid.rc fix. Daemon self-registers at runtime.
+# interface vendor.mediatek.hardware.mdmonitor@1.0::IMDMonitorService default
     class hal
     class main
     user system

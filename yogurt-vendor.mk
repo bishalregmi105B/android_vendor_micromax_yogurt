@@ -24,6 +24,13 @@ PRODUCT_COPY_FILES += \
     vendor/micromax/yogurt/proprietary/lib/libperfctl.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libperfctl.so \
     vendor/micromax/yogurt/proprietary/lib/libpowerhalwrap.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libpowerhalwrap.so \
     vendor/micromax/yogurt/proprietary/lib/libpowerhalwrap_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libpowerhalwrap_jni.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.mtkpower@1.0.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/vendor.mediatek.hardware.power@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.power@2.0.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/vendor.mediatek.hardware.power@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.power@2.1.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.0.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.1.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.2.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.3.so \
     vendor/micromax/yogurt/proprietary/lib/libsignal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsignal.so \
     vendor/micromax/yogurt/proprietary/lib/libsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsink.so \
     vendor/micromax/yogurt/proprietary/lib/libsource.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsource.so \
@@ -42,6 +49,13 @@ PRODUCT_COPY_FILES += \
     vendor/micromax/yogurt/proprietary/lib64/libperfctl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libperfctl.so \
     vendor/micromax/yogurt/proprietary/lib64/libpowerhalwrap.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libpowerhalwrap.so \
     vendor/micromax/yogurt/proprietary/lib64/libpowerhalwrap_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libpowerhalwrap_jni.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.mtkpower@1.0.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/vendor.mediatek.hardware.power@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.power@2.0.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/vendor.mediatek.hardware.power@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.power@2.1.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.0.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.1.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.2.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.3.so \
     vendor/micromax/yogurt/proprietary/lib64/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_cap.so \
     vendor/micromax/yogurt/proprietary/lib64/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_capenc.so \
     vendor/micromax/yogurt/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
@@ -1289,3 +1303,36 @@ PRODUCT_PACKAGES += \
     mediatek-telephony-common \
     android.hardware.neuralnetworks@1.3-service-mtk-gpu \
     manifest_android.hardware.drm@1.4-service.widevine
+
+# Critical vendor shims, VNDK compatibility libs, and VINTF manifests
+PRODUCT_COPY_FILES += \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.sensorservice@1.0.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libexpat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexpat.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libgatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgatekeeper.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/liblz4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblz4.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libpng.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpng.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libpower.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpower.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libprocessgroup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprocessgroup.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libprotobuf-cpp-lite-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite-3.9.1.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libshim_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshim_base.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libshim_hidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshim_hidlbase.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libshim_wpa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshim_wpa.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libstdc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstdc++.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libwifi-system-iface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-system-iface.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.sensorservice@1.0.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/libcurl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcurl.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/libgatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgatekeeper.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/libion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/libpng.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpng.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/libprocessgroup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprocessgroup.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/libprotobuf-cpp-lite-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-3.9.1.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/libshim_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_base.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/libssl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssl.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/libstdc++.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstdc++.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libshim_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshim_utils.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libtinyxml2-v34.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2-v34.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib/libtinyxml2-v34.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2-v34.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libbinder-v32.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinder-v32.so \
+    vendor/micromax/yogurt/proprietary/vendor/lib64/libutils-v30.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v30.so
+
