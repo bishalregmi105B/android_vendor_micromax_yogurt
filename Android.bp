@@ -62,12 +62,18 @@ dex_import {
 	name: "mediatek-telephony-base",
 	owner: "micromax",
 	jars: ["proprietary/framework/mediatek-telephony-base.jar"],
+	dex_preopt: {
+		enabled: false,
+	},
 }
 
 dex_import {
 	name: "mediatek-telephony-common",
 	owner: "micromax",
 	jars: ["proprietary/framework/mediatek-telephony-common.jar"],
+	dex_preopt: {
+		enabled: false,
+	},
 }
 
 prebuilt_etc_xml {

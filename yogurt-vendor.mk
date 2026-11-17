@@ -1328,7 +1328,6 @@ PRODUCT_COPY_FILES += \
     vendor/micromax/yogurt/proprietary/vendor/lib/libprocessgroup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprocessgroup.so \
     vendor/micromax/yogurt/proprietary/vendor/lib/libprotobuf-cpp-lite-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-3.9.1.so \
     vendor/micromax/yogurt/proprietary/vendor/lib/libshim_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_base.so \
-    vendor/micromax/yogurt/proprietary/vendor/lib/libssl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssl.so \
     vendor/micromax/yogurt/proprietary/vendor/lib/libstdc++.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstdc++.so \
     vendor/micromax/yogurt/proprietary/vendor/lib64/libshim_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshim_utils.so \
     vendor/micromax/yogurt/proprietary/vendor/lib64/libtinyxml2-v34.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2-v34.so \
